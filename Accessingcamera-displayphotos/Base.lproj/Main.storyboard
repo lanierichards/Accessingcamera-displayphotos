@@ -36,7 +36,7 @@
                                     <action selector="photoLibraryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nE5-44-ddo"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjc-Ka-FPp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ccwpgyoqewvhlgevpqrn" translatesAutoresizingMaskIntoConstraints="NO" id="sjc-Ka-FPp">
                                 <rect key="frame" x="36" y="200" width="343" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -44,6 +44,9 @@
                         <color key="backgroundColor" red="0.97302979230880737" green="0.9032474160194397" blue="0.97278302907943726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="newImage" destination="sjc-Ka-FPp" id="xVG-Pg-yeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,4 +68,7 @@
             <point key="canvasLocation" x="846" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ccwpgyoqewvhlgevpqrn" width="800" height="450"/>
+    </resources>
 </document>

@@ -33,7 +33,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func photoLibraryTapped(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
+        //this accesses our photo library and saves a photo of our coice to our class! and then when it's done, it quits!
     }
     
+    @IBOutlet weak var newImage: UIImageView!
+    
+    
+    internal func imagePickerController(_ _picker: UIImagePickerController, didFinishPickingMediaWithInfo
+        info: [UIImagePickerController.InfoKey: Any]){
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage]
+            as?UIImage { newImage.image = selectedImage}
+        imagePicker.dismiss(animated: true, completion: nil)
+    
+    
 }
-
+}
